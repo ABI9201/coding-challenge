@@ -1,0 +1,9 @@
+for(let i=0;i<=500;i++){
+  const str = i.toString();
+  if(/(.).*?\1/.test(str)){
+    const sum = str.split('').reduce((acc,digit)=>acc + parseInt(digit),0);
+    if(sum <= 5){
+        console.log(i);
+    }
+  }
+}
